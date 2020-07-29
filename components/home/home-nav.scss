@@ -1,0 +1,13 @@
+
+.header-nav{
+  color: #fff;
+  overflow: hidden;
+}
+.header-nav-item{
+  padding: 10px 15px;
+  margin: 0 15px;
+  float: left;
+  &:hover{
+    cursor: pointer;
+  }
+}
