@@ -3,22 +3,31 @@ import Swiper from '../components/swiper/swiper'
 import HomeNav from '../components/home/home-nav'
 import Link from 'next/link'
 import { Button } from 'antd';
+import { SearchOutlined} from '@ant-design/icons';
 
-export default function Home() {
+function handleSearch() {
+
+}
+export default function Home(props) {
   return (
     <div className="container">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <Swiper> </Swiper>
       <main>
+          <div className="container-head">
+              <Swiper> </Swiper>
+              <div className="header-search">
+                  <input type="text" onKeyUp={handleSearch}/>
+                  <div className="header-search-icon">
+                      <Button type="link" icon={<SearchOutlined />} />
+                  </div>
+                  {/*<SearchOutlined style={{position:'absolute',top:'11px',right:'10px',fontSize:'20px'}}/>*/}
+              </div>
+          </div>
           <div className="home-nav-box">
               <HomeNav> </HomeNav>
-          </div>
-          <div className="header-wrapper">
-              <div className="header-banner"></div>
-              <div className="header-search"></div>
           </div>
       </main>
 
@@ -43,11 +52,42 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
+        .container-head{
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
         .home-nav-box{
           position: absolute;
           top: 0;
           right: 0;
           z-index:1;
+        }
+        .header-search{
+            position:absolute;
+            left:50%;
+            top:50%;
+            width: 500px;
+            height:42px;
+            margin-top:-21px;
+            margin-left:-250px;
+        }
+        .header-search-icon{
+            position:absolute;
+            top:3px;
+            right:5px;
+            font-size:20px;
+            :hover{cursor:pointer}
+        }
+        .header-search input{
+            padding:12px 42px 12px 20px;
+            box-sizing:border-box;
+            width: 100%;
+            height:100%;
+            font-size:16px;
+            line-height:18px;
+            box-shadow:0 0 10px 6px rgba(0,7,24,0.1);
+            border-radius:6px;
         }
 
         .header-wrapper{

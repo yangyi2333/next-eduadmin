@@ -8,7 +8,7 @@ export default function () {
             <li className="header-nav-item">腾讯</li>
             <li className="header-nav-item">淘宝</li>
             <li className="header-nav-item">爱奇艺</li>
-            <li className="header-nav-item">其它</li>
+            <li className="header-nav-item">登录</li>
         </ul>
     )
 }
