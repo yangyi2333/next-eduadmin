@@ -4,11 +4,30 @@ import HomeNav from '../components/home/home-nav'
 import Link from 'next/link'
 import { Button } from 'antd';
 import { SearchOutlined} from '@ant-design/icons';
+import {request} from "../utils/axios";
+import fetch from 'isomorphic-unfetch'
 
+
+export async function getServerSideProps(context) {
+    let res = await fetch('http://60.205.253.148:9030/eduapi/swipers',{
+        headers:{
+            accessToken:'8f86ed7b858a4f749884908caa6e6b37','Content-Type': 'application/json'
+        },
+        method:'GET'
+    });
+    const data = await res.json();
+    // request('get','swipers',{accessToken:'8f86ed7b858a4f749884908caa6e6b37'}).then(res=>{
+    //     data = res.content;
+    // })
+    return {
+        props: {data}, // will be passed to the page component as props
+    }
+}
 function handleSearch() {
 
 }
 export default function Home(props) {
+    console.log(123456,props)
   return (
     <div className="container">
       <Head>

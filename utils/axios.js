@@ -1,14 +1,13 @@
 import axios from 'axios'
 import React from 'react';
-import * as config from './url_config';
 import {message,Modal} from 'antd'
-import {reLoginFlag,reLoginStatu,checkAuthority} from './common'
+// import {reLoginFlag,reLoginStatu} from './common'
 
 
 
 const { confirm } = Modal;
 const service = axios.create({
-  baseURL: config.BASE_URL,
+  baseURL: 'http://60.205.253.148:9030/',
   timeout: 20000,
   headers: {
     common: {
@@ -24,31 +23,17 @@ const service = axios.create({
 // http request 拦截器
 service.interceptors.request.use(
   config => {
-      if(config.method !== 'get' && !checkAuthority()){
-          if(config.url !=='eduadmin/login'
-              && config.url !== 'dete-service/planeType/findPlaneTypes'
-              && config.url !== 'dete-service/dete/findBeforeDete'
-              && config.url !== 'dete-service/dete/findAfterDete'
-              && config.url !== 'dete-service/partsLife/partsLifeByPlaneTypeId'
-              && config.url !== 'dete-service/planeType/findPlaneTypes'
-              && config.url !== 'dete-service/dete/deteResult'
-              && config.url !== 'dete-service/partsLife/findPartsLife'
-          ){
-              message.error('当前账号没有该操作权限')
-              return false
-          }
-      }
-      if(config.url!=='eduadmin/login'){
-          if (!localStorage.getItem('eduadmin_info') || localStorage.getItem('eduadmin_info') == 'undefine'){
-              if(!reLoginFlag){
-                  React.$history.push('/login');
-                  message.error('请先登录!')
-                  reLoginStatu()
-              }
-          }else{
-              config.headers['accessToken'] = JSON.parse(localStorage.getItem('eduadmin_info')).accessToken;
-          }
-      }
+      // if(config.url!=='eduadmin/login'){
+      //     if (!localStorage.getItem('eduadmin_info') || localStorage.getItem('eduadmin_info') == 'undefine'){
+      //         if(!reLoginFlag){
+      //             React.$history.push('/login');
+      //             message.error('请先登录!')
+      //             // reLoginStatu()
+      //         }
+      //     }else{
+      //         config.headers['accessToken'] = JSON.parse(localStorage.getItem('eduadmin_info')).accessToken;
+      //     }
+      // }
       if (config.params) {
           config.params['clientId'] = 'adminweb:1234';
       } else {
@@ -73,12 +58,12 @@ service.interceptors.response.use(
   error => {
     if (error.response && (error.response.status == '401' || error.response.status == '601')) {
       // if (localStorage.getItem('eduadmin_info') == null || localStorage.getItem('eduadmin_info').accessToken == null) {
-        console.log(reLoginFlag,reLoginStatu)
-        if(!reLoginFlag){
-            React.$history.push('/login');
-            message.error('请先登录!')
-            reLoginStatu()
-        }
+      //   console.log(reLoginFlag,reLoginStatu)
+        // if(!reLoginFlag){
+        //     React.$history.push('/login');
+        //     message.error('请先登录!')
+        //     reLoginStatu()
+        // }
         // }
       // } else {
       //   refreshToken()
@@ -99,7 +84,7 @@ export function request (method = 'get', url, params = {}, baseUrl = '', config 
     const data_type = method === 'get' ? 'params' : 'data';
   return new Promise((resolve, reject) => {
     service({
-      url: (baseUrl||'eduadmin/') + url,
+      url: (baseUrl||'eduapi/') + url,
       method: method,
       [data_type]:params,
       ...config
