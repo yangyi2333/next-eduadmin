@@ -1,0 +1,22 @@
+
+.login-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.2);
+  z-index:99998;
+  .login-box{
+    width: 520px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-left: -260px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    min-height: 300px;
+  }
+}

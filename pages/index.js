@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Swiper from '../components/swiper/swiper'
 import HomeNav from '../components/home/home-nav'
+// import Login from '../components/login/login'
 import Link from 'next/link'
 import { Button } from 'antd';
 import { SearchOutlined} from '@ant-design/icons';
@@ -38,7 +39,7 @@ export default function Home(props) {
           <div className="container-head">
               <Swiper> </Swiper>
               <div className="header-search">
-                  <input type="text" onKeyUp={handleSearch}/>
+                  <input type="text" onKeyUp={handleSearch} placeholder="输入关键词搜索内容"/>
                   <div className="header-search-icon">
                       <Button type="link" icon={<SearchOutlined />} />
                   </div>
