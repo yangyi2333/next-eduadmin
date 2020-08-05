@@ -1,4 +1,4 @@
-
+@import '../../styles/global.scss';
 .login-bg{
   position: fixed;
   top: 0;
@@ -15,8 +15,88 @@
     left: 50%;
     text-align: center;
     margin-left: -260px;
+    margin-top: -188px;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,.3);
     min-height: 300px;
+  }
+  .login-content {
+    width: 405px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+      .input-box {
+        margin-top:40px;
+        position: relative;
+        height: 44px;
+        .input-box-icon{
+          width: 32px;
+          height: 16px;
+          position: absolute;
+          top: 14px;
+          left: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-right: 14px;
+          border-right: 2px solid $color-primary;
+        }
+        >input {
+          border: 1px solid #e6e6e6;
+          border-radius: 4px;
+          padding: 14px 0 14px 75px;
+          height: 44px;
+          line-height: 44px;
+          width: 100%;
+          box-sizing: border-box;
+          font-size: 16px;
+          float: left;
+        }
+        >input:focus{
+          border-color: $color-primary;
+        }
+        >.input-left {
+          width: 240px;
+        }
+        .input-btn {
+          width: 150px;
+          height: 44px;
+          line-height: 44px;
+          border: 1px solid $color-primary;
+          border-radius: 4px;
+          box-sizing: border-box;
+          cursor: pointer;
+          float:right;
+        }
+      }
+    .login-type-change{
+      color: #999;
+      font-size: 16px;
+      margin-top: 18px;
+      float: right;
+      cursor: pointer;
+    }
+    .login-content-error {
+      position: absolute;
+      bottom: -20px;
+      left: 75px;
+      font-size: 14px;
+      color: $color-red;
+      z-index: 1;
+    }
+    .login-button {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      width: 100%;
+      background-color: $color-primary;
+      height: 44px;
+      line-height: 44px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 20px;
+    }
   }
 }

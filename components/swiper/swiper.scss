@@ -2,6 +2,8 @@
   background-color: #000;
   width: 100vw;
   height: 320px;
+  position: relative;
+  z-index: 1;
   .home-swiper-slide{
     width: 100vw;
     height: 320px;

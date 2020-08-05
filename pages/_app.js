@@ -1,5 +1,5 @@
 
-import {request} from "../utils/axios";
+
 import "antd/dist/antd.css"
 import '../styles/global.scss'
 
