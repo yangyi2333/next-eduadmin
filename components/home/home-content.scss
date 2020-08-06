@@ -1,0 +1,41 @@
+.home-container{
+  width: 1280px;
+  margin: 0 auto;
+  border-radius: 10px;
+  height:500px;
+  margin-top: 320px;
+  position: relative;
+  .home-classify{
+    position: absolute;
+    top: -60px;
+    width: 100%;
+    z-index: 10;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 16px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 18px 10px;
+  }
+  .classify-item{
+    padding:0 30px;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    height: 100%;
+    background-color: #fff;
+    //border-right:1px solid rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition:height .2s;
+    -moz-transition:height .2s; /* Firefox 4 */
+    -webkit-transition:height .2s; /* Safari and Chrome */
+    -o-transition:height .2s; /* Opera */
+    &:hover{
+      height: 200px;
+      border-left:1px solid rgba(0,0,0,0.1);
+      border-right:1px solid rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+  }
+}

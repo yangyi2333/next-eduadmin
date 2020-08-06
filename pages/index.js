@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Swiper from '../components/swiper/swiper'
 import HomeNav from '../components/home/home-nav'
+import HomeContainer from '../components/home/home-content'
 // import Login from '../components/login/login'
 import Link from 'next/link'
 import { Button } from 'antd';
@@ -49,6 +50,7 @@ export default function Home(props) {
           <div className="home-nav-box">
               <HomeNav> </HomeNav>
           </div>
+          <HomeContainer></HomeContainer>
       </main>
 
       {/*<footer>*/}
@@ -91,6 +93,7 @@ export default function Home(props) {
             height:42px;
             margin-top:-21px;
             margin-left:-250px;
+            z-index:2;
         }
         .header-search-icon{
             position:absolute;
