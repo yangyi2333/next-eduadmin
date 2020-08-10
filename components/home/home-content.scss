@@ -17,6 +17,9 @@
     cursor: pointer;
     box-sizing: border-box;
     padding: 18px 10px;
+    &:hover{
+      height: 300px;
+    }
   }
   .classify-item{
     padding:0 30px;
@@ -32,7 +35,7 @@
     -webkit-transition:height .2s; /* Safari and Chrome */
     -o-transition:height .2s; /* Opera */
     &:hover{
-      height: 200px;
+      height: 100%;
       border-left:1px solid rgba(0,0,0,0.1);
       border-right:1px solid rgba(0,0,0,0.1);
       border-radius: 6px;
