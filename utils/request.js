@@ -22,9 +22,9 @@ export async function authRequest(method,url,params,data){
     )
 }
 
-export async function request(method,url,params,data={}){
+export async function apiRequest(method,url,params={},data={}){
     const accessToken = JSON.parse(localStorage.getItem('eduUserInfo')).accessToken || '';
-    if(params){
+    if(Object.keys(params).length > 0){
         let arr = [];
         for (let key in params){
             arr.push(`${key}=${params[key]}`);
@@ -38,7 +38,7 @@ export async function request(method,url,params,data={}){
                 'Content-Type': 'application/json'
             },
             method: method,
-            body: data,
+            body: JSON.stringify(data),
         })
     )
 }

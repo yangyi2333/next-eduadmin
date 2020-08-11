@@ -1,6 +1,6 @@
 import React from "react";
 import './home-nav.scss'
-import Login from '../login/login'
+import {authRequest, apiRequest} from "../../utils/request";
 
 export default class HomeNav extends React.Component {
     constructor(props) {
@@ -10,12 +10,17 @@ export default class HomeNav extends React.Component {
         }
     }
     handleLogin = ()=>{
-        this.setState({loginFlag:true})
+        apiRequest('get',`swipers`).then(res=>{
+            console.log('res',res)
+            if(res){
+                console.log(res)
+            }
+        });
+        // this.props.onLogin()
     }
     render(){
         return (
             <div>
-                <Login value={this.state.loginFlag}> </Login>
                 <ul className="header-nav">
                     <li className="header-nav-item">百度</li>
                     <li className="header-nav-item">谷歌</li>

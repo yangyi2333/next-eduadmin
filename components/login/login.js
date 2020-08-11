@@ -1,7 +1,7 @@
 import React from "react";
 import './login.scss'
 import { Divider ,message } from 'antd';
-import {authRequest} from "../../utils/request";
+import {authRequest, request} from "../../utils/request";
 
 export default class Login extends React.Component {
     constructor(props) {

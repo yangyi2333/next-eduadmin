@@ -2,7 +2,8 @@
 import { Carousel } from 'antd';
 import './swiper.scss'
 
-export default function swiper({}){
+export default function swiper({value}){
+    console.log('data',value)
     return(
         <div className="home-swiper">
             <Carousel autoplay>
