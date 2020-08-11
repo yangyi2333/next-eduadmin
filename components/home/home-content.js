@@ -1,7 +1,6 @@
 import React from "react";
 import './home-content.scss'
 import { Divider ,message } from 'antd';
-import {request} from "../../utils/request";
 
 
 export default class HomeContent extends React.Component  {
@@ -9,9 +8,46 @@ export default class HomeContent extends React.Component  {
         super(props)
         this.state = {
             coursesData : [{
-                cover:'',
-                title:'',
-                price:'',
+                cover:'https://edu-tob.bdimg.com/v1/pc/%E6%96%87%E5%BA%93%E9%A6%96%E9%A1%B5-%E9%99%90%E6%97%B6%E4%BF%83%E9%94%80-1597153756539.png',
+                title:'历史其实很简单：趣味细说生猛大明朝,历史其实很简单：趣味细说生猛大明朝,历史其实很简单：趣味细说生猛大明朝',
+                price:9.90,
+            },{
+                cover:'https://edu-tob.bdimg.com/v1/pc/6b7187eba8088bfe1323f619cb74de2c-1596597262098.PNG',
+                title:'历史其实很简单：趣味细说生猛大明朝',
+                price:9.90,
+            },{
+                cover:'https://edu-tob.bdimg.com/v1/pc/%E6%96%87%E5%BA%93%E9%A6%96%E9%A1%B5-%E9%99%90%E6%97%B6%E4%BF%83%E9%94%80-1597153756539.png',
+                title:'历史其实很简单：趣味细说生猛大明朝,历史其实很简单：趣味细说生猛大明朝',
+                price:9.90,
+            },{
+                cover:'https://edu-tob.bdimg.com/v1/pc/%E6%96%87%E5%BA%93%E9%A6%96%E9%A1%B5-%E9%99%90%E6%97%B6%E4%BF%83%E9%94%80-1597153756539.png',
+                title:'历史其实很简单：趣味细说生猛大明朝',
+                price:9.90,
+            }],
+            docData : [{
+                cover:'https://edu-tob.bdimg.com/v1/pc/%E6%96%87%E5%BA%93%E9%A6%96%E9%A1%B5-%E9%99%90%E6%97%B6%E4%BF%83%E9%94%80-1597153756539.png',
+                title:'历史其实很简单：趣味细说生猛大明朝,历史其实很简单：趣味细说生猛大明朝,历史其实很简单：趣味细说生猛大明朝',
+                price:9.90,
+            },{
+                cover:'https://edu-tob.bdimg.com/v1/pc/6b7187eba8088bfe1323f619cb74de2c-1596597262098.PNG',
+                title:'历史其实很简单：趣味细说生猛大明朝',
+                price:9.90,
+            },{
+                cover:'https://edu-tob.bdimg.com/v1/pc/%E6%96%87%E5%BA%93%E9%A6%96%E9%A1%B5-%E9%99%90%E6%97%B6%E4%BF%83%E9%94%80-1597153756539.png',
+                title:'历史其实很简单：趣味细说生猛大明朝,历史其实很简单：趣味细说生猛大明朝',
+                price:9.90,
+            },{
+                cover:'https://edu-tob.bdimg.com/v1/pc/%E6%96%87%E5%BA%93%E9%A6%96%E9%A1%B5-%E9%99%90%E6%97%B6%E4%BF%83%E9%94%80-1597153756539.png',
+                title:'历史其实很简单：趣味细说生猛大明朝',
+                price:9.90,
+            },{
+                cover:'https://edu-tob.bdimg.com/v1/pc/%E6%96%87%E5%BA%93%E9%A6%96%E9%A1%B5-%E9%99%90%E6%97%B6%E4%BF%83%E9%94%80-1597153756539.png',
+                title:'历史其实很简单：趣味细说生猛大明朝,历史其实很简单：趣味细说生猛大明朝',
+                price:9.90,
+            },{
+                cover:'https://edu-tob.bdimg.com/v1/pc/%E6%96%87%E5%BA%93%E9%A6%96%E9%A1%B5-%E9%99%90%E6%97%B6%E4%BF%83%E9%94%80-1597153756539.png',
+                title:'历史其实很简单：趣味细说生猛大明朝',
+                price:9.90,
             }],
             classifyList: [{
                 icon:'/images/classify-course.png',
@@ -56,19 +92,52 @@ export default class HomeContent extends React.Component  {
                         })
                     }
                 </div>
-                <div className="home-courses">
-                    <div className="home-courses-img">
+                <div className="home-content">
+                    <div className="home-courses">
+                        <div className="home-courses-img">
 
+                        </div>
+                        <div className="home-courses-title">
+                            推荐课程
+                        </div>
+                        <div className="home-courses-list">
+                            {
+                                this.state.coursesData.map(item=>{
+                                    return (
+                                        <div className="home-courses-item">
+                                            <div className="home-courses-item-cover">
+                                                <img src={item.cover} alt=""/>
+                                            </div>
+                                            <div className="home-courses-item-title">{item.title}</div>
+                                            <div className="home-courses-item-price">¥ {item.price}</div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
                     </div>
-                    <div className="home-courses-title">
-                        推荐课程
-                    </div>
-                    <div className="home-courses-list">
-                        {/*{*/}
-                            {/*this.state.coursesData.map(item=>{*/}
+                    <div className="home-courses">
+                        <div className="home-courses-img">
 
-                            {/*})*/}
-                        {/*}*/}
+                        </div>
+                        <div className="home-courses-title">
+                            推荐文章
+                        </div>
+                        <div className="home-courses-list">
+                            {
+                                this.state.docData.map(item=>{
+                                    return (
+                                        <div className="home-courses-item home-courses-item-doc">
+                                            <div className="home-courses-item-cover home-courses-item-cover-doc">
+                                                <img src={item.cover} alt=""/>
+                                            </div>
+                                            <div className="home-courses-item-title">{item.title}</div>
+                                            <div className="home-courses-item-price">¥ {item.price}</div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
             </div>
