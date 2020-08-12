@@ -3,17 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="0df1a5e8-9df5-4061-a0ce-af77adbf89a8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/components/home/home-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/home-content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/home/home-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/home/home-content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/swiper/swiper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/swiper/swiper.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+>>>>>>> 1acb8b1aa58c83b4cc5e6680b102f09fa1d2e4de
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -123,6 +127,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 1acb8b1aa58c83b4cc5e6680b102f09fa1d2e4de
   <component name="FindInProjectRecents">
     <findStrings>
       <find>3000</find>
@@ -151,6 +157,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -179,6 +186,8 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 1acb8b1aa58c83b4cc5e6680b102f09fa1d2e4de
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
     <bower-package value="" />
@@ -190,109 +199,25 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
+  <component name="ProjectId" id="1fxrIHHBTIYSMu6LD9xFo8eahbj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name=".next" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name=".next" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="swiper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="course" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu-client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu-client" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -302,18 +227,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\YANGYI\分校系统\edu-client\utils" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -329,6 +242,7 @@
       <workItem from="1595904033460" duration="27670000" />
       <workItem from="1596264108085" duration="8355000" />
       <workItem from="1596419030080" duration="40344000" />
+<<<<<<< HEAD
       <workItem from="1597026222652" duration="12540000" />
     </task>
     <servers />
@@ -567,5 +481,20 @@
         </state>
       </provider>
     </entry>
+=======
+      <workItem from="1597026222652" duration="11272000" />
+      <workItem from="1597170504653" duration="4291000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1597175836121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597175836121" />
+>>>>>>> 1acb8b1aa58c83b4cc5e6680b102f09fa1d2e4de
   </component>
 </project>
