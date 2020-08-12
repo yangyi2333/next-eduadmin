@@ -10,13 +10,13 @@ export default class HomeNav extends React.Component {
         }
     }
     handleLogin = ()=>{
-        apiRequest('get',`swipers`).then(res=>{
-            console.log('res',res)
-            if(res){
-                console.log(res)
-            }
-        });
-        // this.props.onLogin()
+        // apiRequest('get',`swipers`).then(res=>{
+        //     console.log('res',res)
+        //     if(res){
+        //         console.log(res)
+        //     }
+        // });
+        this.props.onLogin()
     }
     render(){
         return (
