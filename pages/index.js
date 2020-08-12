@@ -51,9 +51,9 @@ export default class Home extends React.Component{
                     <HomeContainer></HomeContainer>
                 </main>
 
-                {/*<footer>*/}
-                {/*<img src="/vercel.svg" alt="Vercel Logo" className="logo" />*/}
-                {/*</footer>*/}
+                <footer>
+                <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+                </footer>
             </div>
         )
     }
