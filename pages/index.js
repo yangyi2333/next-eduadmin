@@ -34,7 +34,7 @@ export default class Home extends React.Component{
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <main>
-                    <Login value={this.state.loginFlag}> </Login>
+                    <Login value={this.state.loginFlag} onClose={()=>{this.setState({loginFlag:false})}}> </Login>
                     <div className="container-head">
                         <Swiper value={this.state.swiperData}> </Swiper>
                         <div className="header-search">

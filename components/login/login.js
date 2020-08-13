@@ -2,6 +2,7 @@ import React from "react";
 import './login.scss'
 import { Divider ,message } from 'antd';
 import {authRequest, request} from "../../utils/request";
+import { CloseOutlined } from '@ant-design/icons';
 
 export default class Login extends React.Component {
     constructor(props) {
@@ -130,6 +131,7 @@ export default class Login extends React.Component {
         return(
             <div id="login" className="login-bg" style={{display:this.props.value ? 'block' :'none'}}>
                 <div className="login-box">
+                    <CloseOutlined  className="login-box-close" onClick={()=>{this.props.onClose()}}/>
                     <Divider>使用手机号登录</Divider>
                     <div className="login-content">
                         <div className="input-box">

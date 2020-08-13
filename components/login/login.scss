@@ -20,6 +20,14 @@
     box-shadow: 0 2px 5px rgba(0,0,0,.3);
     min-height: 300px;
   }
+  .login-box-close{
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+    &:hover{
+      color: #999;
+    }
+  }
   .login-content {
     width: 405px;
     box-sizing: border-box;
