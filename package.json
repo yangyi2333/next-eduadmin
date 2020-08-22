@@ -20,7 +20,8 @@
     "node-sass": "^4.14.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "styled-jsx-plugin-sass": "^1.0.0"
+    "styled-jsx-plugin-sass": "^1.0.0",
+    "video.js": "^7.8.4"
   },
   "devDependencies": {
     "css-loader": "^4.2.0"
