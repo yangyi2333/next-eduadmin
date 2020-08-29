@@ -24,15 +24,15 @@ const service = axios.create({
 service.interceptors.request.use(
   config => {
       // if(config.url!=='eduadmin/login'){
-      //     if (!localStorage.getItem('eduadmin_info') || localStorage.getItem('eduadmin_info') == 'undefine'){
-      //         if(!reLoginFlag){
-      //             React.$history.push('/login');
-      //             message.error('请先登录!')
-      //             // reLoginStatu()
-      //         }
-      //     }else{
-      //         config.headers['accessToken'] = JSON.parse(localStorage.getItem('eduadmin_info')).accessToken;
-      //     }
+          if (!localStorage.getItem('eduUserInfo') || localStorage.getItem('eduUserInfo') == 'undefine'){
+              // if(!reLoginFlag){
+              //     React.$history.push('/login');
+              //     message.error('请先登录!')
+              //     // reLoginStatu()
+              // }
+          }else{
+              config.headers['accessToken'] = JSON.parse(localStorage.getItem('eduUserInfo')).accessToken;
+          }
       // }
       if (config.params) {
           config.params['clientId'] = 'adminweb:1234';

@@ -58,6 +58,9 @@
       line-height: 24px;
       padding: 0 6px;
       float: left;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
   .classify-item:not(:last-child){

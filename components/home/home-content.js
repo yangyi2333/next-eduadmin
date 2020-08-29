@@ -69,6 +69,7 @@ export default class HomeContent extends React.Component  {
         }
     }
     render(){
+        console.log(this.props.courses)
         return (
             <div className="home-container">
                 <div className="home-classify">

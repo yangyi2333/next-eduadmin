@@ -2,6 +2,7 @@ import React from "react";
 import videojs from 'video.js'
 import 'video.js/dist/video-js.css'
 import './video-view.scss'
+import CourseContent from './course-content'
 
 export default class VideoView extends React.Component {
     constructor(props) {
@@ -10,11 +11,11 @@ export default class VideoView extends React.Component {
             url:"http://file.nextlord.com/77f54d33-503e-4b6d-81fa-5819274174af.mp4",
             name:'5总体概述.mp4',
             courseList:[{
-                name:'孩子拖拉磨蹭，爱拖延的3个主要原因！'
+                name:'孩子拖拉磨蹭，爱拖延的3个主要原因！1'
             },{
-                name:'孩子拖拉磨蹭，爱拖延的3个主要原因！'
+                name:'孩子拖拉磨蹭，爱拖延的3个主要原因！2'
             },{
-                name:'孩子拖拉磨蹭，爱拖延的3个主要原因！'
+                name:'孩子拖拉磨蹭，爱拖延的3个主要原因！3'
             }],
             currentIndex:1,
             description:'孩子老是拖拉磨蹭?孩子学习缺乏计划性?孩子做作业缺乏专注力?孩子不爱坚持？ 这是每个父母头痛的问题，又不知道如何解决? 儿童时间管理专家、畅销书《不急不催，轻松让孩子学会时间管理》作者何小英老师，让孩子告别拖拉磨蹭，提升专注力！',
@@ -94,11 +95,13 @@ export default class VideoView extends React.Component {
                                     {this.state.description}
                                 </div>
                                 <div className="video-content-detail-price">
-
+                                    <div className="video-price-buy">立即购买</div>
+                                    <div className="video-price-show"><span className="video-price-icon">¥</span>9.90</div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <CourseContent> </CourseContent>
                 </div>
             </div>
         )
